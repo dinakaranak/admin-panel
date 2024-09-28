@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/css/dina.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <form class="mx-auto">
+            <h1 class="text-center">Login</h1>
+            <div class="mb-3 mt-5">
+              <label for="InputEmail1" class="form-label">User Name</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="InputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="InputPassword1">
+              <div id="emailHelp" class="form-text">Forget password?</div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary mt-4" onclick="auth()">Login</button>
+          </form>
+
+    </div>
+    <script>
+        function auth(){
+            var email = document.getElementById('InputEmail1').value;
+            var pass = document.getElementById('InputPassword1').value;
+if (email == 'dinakaranak001@gmail.com' && pass == 'dina212004')
+    {
+        window.location.assign('admin.html');
+        alert("login successfully");
+    }
+    else{
+        alert("invalid username & password");
+    }
+
+        }
+        
+    </script>
+</body>
+</html>
